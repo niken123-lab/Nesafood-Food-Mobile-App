@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:backgroundTint="@color/white">
+
+    <!-- Gambar background atas -->
+
+    <!-- Logo -->
+
+    <ImageView
+        android:id="@+id/l_img_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-9dp"
+        android:layout_marginTop="-6dp"
+        android:src="@drawable/gambar1" />
+
+    <ImageView
+        android:id="@+id/l_img_2"
+        android:layout_width="160dp"
+        android:layout_height="170dp"
+        android:src="@drawable/nesapict"
+        android:layout_below="@id/l_img_1"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/l_txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l_img_2"
+        android:text="Masuk NesaFood"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinssemibold"
+        android:textColor="@color/black" />
+
+    <!-- Form username dan password -->
+    <LinearLayout
+        android:id="@+id/l_ly_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/l_txt_1"
+        android:padding="30dp">
+
+        <EditText
+            android:id="@+id/l_edt_usn"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="10dp"
+            android:hint="Nama"
+            android:paddingLeft="10dp"
+            android:backgroundTint="@color/background"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsregular" />
+
+        <EditText
+            android:id="@+id/l_edt_pass"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="10dp"
+            android:hint="Kata Sandi"
+            android:paddingLeft="10dp"
+            android:backgroundTint="@color/background"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:paddingRight="16dp"
+            android:drawableRight="@drawable/ic_eye_off"
+            android:drawablePadding="12dp"
+            android:paddingEnd="16dp"
+            android:fontFamily="@font/poppinsregular" />
+
+
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lupa Kata Sandi?"
+            android:textSize="12sp"
+            android:textColor="@color/secondarycolor"
+            android:layout_below="@id/l_btn_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsregular"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="4dp" />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/l_btn_1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="MASUK"
+        android:layout_below="@id/l_ly_1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape_yellow"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsbold" />
+
+    <!-- Teks daftar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/l_btn_1"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum Punya Akun?"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:fontFamily="@font/poppinsbold"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:clickable="true"
+            android:textColor="@color/secondarycolor"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="4dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

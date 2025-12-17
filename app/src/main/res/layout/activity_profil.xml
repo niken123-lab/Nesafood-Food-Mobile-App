@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ProfilActivity"
+    android:background="@color/background">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <!-- Judul -->
+            <TextView
+                android:id="@+id/tvProfileTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profil Pengguna"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/primarycolor"
+                android:layout_centerHorizontal="true" />
+
+            <!-- Garis Pembatas -->
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tvProfileTitle"
+                android:layout_marginTop="12dp"
+                android:background="#BDBDBD" />
+
+            <!-- Foto Profil -->
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/divider"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_default_user"
+                android:scaleType="centerCrop"
+                android:padding="4dp" />
+
+            <!-- Tombol Ubah Foto -->
+            <Button
+                android:id="@+id/btnChangePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgProfile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Ubah Foto"
+                android:textSize="12sp"
+                android:backgroundTint="@color/primarycolor"
+                android:textColor="#FFFFFF"
+                android:padding="0dp" />
+
+            <!-- Email -->
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgProfile"
+                android:layout_marginTop="63dp"
+                android:backgroundTint="@color/background"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:textColor="@color/black" />
+
+            <!-- Username -->
+            <EditText
+                android:id="@+id/edtUserOrStore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtEmail"
+                android:layout_marginTop="3dp"
+                android:backgroundTint="@color/background"
+                android:drawableStart="@drawable/ic_user"
+                android:drawablePadding="10dp"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="@color/black" />
+
+            <!-- Tombol Ubah Username -->
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtUserOrStore"
+                android:layout_marginTop="9dp"
+                android:backgroundTint="@color/primarycolor"
+                android:text="Ubah Username"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <!-- 🔹 Tambahan: Tombol Ubah Password -->
+            <Button
+                android:id="@+id/btnChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnSave"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/primarycolor"
+                android:text="Ubah Password"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <!-- Tombol Logout -->
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnChangePassword"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/primarycolor"
+                android:text="Logout"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

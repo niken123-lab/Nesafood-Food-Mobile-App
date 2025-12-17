@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="64dp"
+    android:padding="12dp"
+    android:background="@android:color/white">
+
+    <!-- Nama Menu -->
+    <TextView
+        android:id="@+id/tvCartNama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nama Menu"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvCartTotalItem"
+        app:layout_constraintHorizontal_bias="0" />
+
+    <!-- Harga satuan -->
+    <TextView
+        android:id="@+id/tvCartHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp20.000"
+        android:textColor="@color/nesa_peach"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@id/tvCartNama"
+        app:layout_constraintTop_toBottomOf="@id/tvCartNama"/>
+
+    <!-- Jumlah item -->
+    <TextView
+        android:id="@+id/tvCartQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x2"
+        android:textSize="13sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/tvCartHarga"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvCartHarga"/>
+
+    <!-- Total per item -->
+    <TextView
+        android:id="@+id/tvCartTotalItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp40.000"
+        android:textColor="@color/nesa_orange"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Tombol Hapus -->
+    <Button
+        android:id="@+id/btnHapus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/nesa_orange"
+        android:text="hapus"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCartTotalItem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="1dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

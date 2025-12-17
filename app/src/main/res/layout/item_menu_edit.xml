@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:elevation="2dp"
+    android:layout_marginBottom="8dp">
+
+    <!-- 🔹 Gambar Menu di kiri -->
+    <ImageView
+        android:id="@+id/imgMenuPenjual"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="12dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Gambar Menu" />
+
+    <!-- 🔹 Nama & Harga di tengah (vertikal) -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvNamaMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Menu"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvHargaMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 0"
+            android:textSize="14sp"
+            android:textColor="#666666" /> <!-- 🔹 abu halus biar lebih enak dilihat -->
+    </LinearLayout>
+
+    <!-- 🔹 Tombol Edit di kanan -->
+    <ImageView
+        android:id="@+id/btnEdit"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="18dp"
+        android:src="@android:drawable/ic_menu_edit"
+        app:tint="@color/nesa_green" /> <!-- ✅ pakai app:tint -->
+
+    <!-- 🔹 Tombol Delete di kanan -->
+    <ImageView
+        android:id="@+id/btnDelete"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@android:drawable/ic_menu_delete"
+        app:tint="@color/nesa_orange" /> <!-- ✅ pakai app:tint -->
+    <!-- 🔹 warna merah muda lembut -->
+</LinearLayout>

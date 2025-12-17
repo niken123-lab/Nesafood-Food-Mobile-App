@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:padding="10dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/tvNamaToko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nazla"
+        android:textStyle="bold"
+        android:textColor="#E36414"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvDetailPesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nasi Goreng ayam x2"
+        android:textColor="#000000"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:id="@+id/tvHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp. 25.000,00"
+        android:textColor="#E36414"
+        android:textStyle="bold"
+        android:layout_marginTop="2dp" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:backgroundTint="#8BC34A"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="6dp"/>
+</LinearLayout>

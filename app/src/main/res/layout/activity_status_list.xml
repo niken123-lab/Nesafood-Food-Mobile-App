@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F9F9F9"
+    tools:context=".StatusListActivity">
+
+
+    <!-- 🔹 Info ketika belum ada pesanan -->
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Belum ada pesanan aktif."
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="#777"
+        android:padding="24dp"
+        android:visibility="gone" />
+
+    <!-- 🔹 RecyclerView daftar pesanan -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvParentOrders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

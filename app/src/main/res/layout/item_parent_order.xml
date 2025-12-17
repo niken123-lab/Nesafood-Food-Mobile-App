@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="5dp"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="6dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="14dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 🔹 Ikon toko di kiri -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txtNamaToko"
+                android:text="Warung Contoh"
+                android:textColor="@color/nesa_orange"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtTanggal"
+                android:text="12 Nov 2025"
+                android:textSize="13sp"
+                android:textColor="#777777"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtTotal"
+                android:text="Rp25.000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/nesa_green"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- 🔹 Tombol di kanan -->
+        <Button
+            android:id="@+id/btnLihatStatus"
+            android:text="Lihat Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primarycolor"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+            android:textSize="13sp"
+            android:elevation="2dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

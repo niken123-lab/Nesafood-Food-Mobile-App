@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NesaFood</string>
+    <string name="logo_desc">Logo aplikasi</string>
+    <string name="total_placeholder">Total: Rp0</string>
+    <string name="total_fmt">Total: %1$s</string>
+
+</resources>

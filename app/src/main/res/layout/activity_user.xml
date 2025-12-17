@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity">
+
+    <ImageView
+        android:id="@+id/l_img_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:id="@+id/l_img_2"
+        android:layout_width="160dp"
+        android:layout_height="170dp"
+        android:src="@drawable/nesapict"
+        android:layout_below="@id/l_img_1"
+        android:layout_centerHorizontal="true" />
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l_img_2"
+        android:text="Pesan mudah, ambil sendiri!"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:id="@+id/txt_1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_1"
+        android:text="Dengan NesaFood, kamu bisa memesan makanan favoritmu dari mana saja. Cukup pilih menu, lakukan pembayaran, dan saat sampai di gerai, pesanannya sudah siap untuk kamu ambil tanpa perlu mengantri."
+        android:padding="20dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/black"
+        android:id="@+id/txt_2"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_1"
+        android:layout_below="@id/txt_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Pembeli"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppinsbold"
+        />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_2"
+        android:layout_below="@id/btn_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="penjual"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppinsbold"
+        />
+
+</RelativeLayout>

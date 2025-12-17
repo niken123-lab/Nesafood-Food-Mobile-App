@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primarycolor">#46abb1</color>
+    <color name="secondarycolor">#67c2c7</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="background">#EEEEEE</color>
+    <color name="green">#4CAF50</color>
+    <color name="red">#F44336</color>
+
+    <color name="nesa_orange">#F2762E</color>
+    <color name="nesa_peach">#F2AF5C</color>
+    <color name="nesa_yellow">#F2CA50</color>
+    <color name="nesa_green">#74A65D</color>
+    <color name="nesa_teal">#4BBFBF</color>
+    <color name="teal_700">#00796B</color>
+    <color name="teal_200">#80CBC4</color>
+
+    <color name="status_default">#E0E0E0</color>   <!-- abu-abu terang -->
+    <color name="status_active_green">#DCEDC8</color>  <!-- hijau lembut -->
+    <color name="status_active_orange">#FFECB3</color> <!-- oranye lembut -->
+    <color name="status_active_blue">#BBDEFB</color>   <!-- biru lembut -->
+
+</resources>

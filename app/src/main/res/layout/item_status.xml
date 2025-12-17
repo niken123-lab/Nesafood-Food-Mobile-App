@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_margin="6dp"
+    android:background="@color/background"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/tvNamaPembeli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nazla"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/nesa_orange"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tvItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nasi Gila x1\nEs Teh x2"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rp 40.000"
+        android:textStyle="bold"
+        android:textAlignment="textEnd"
+        android:textSize="14sp"
+        android:textColor="@color/nesa_orange"
+        android:layout_marginBottom="6dp" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/nesa_green"
+        android:textStyle="bold" />
+</LinearLayout>

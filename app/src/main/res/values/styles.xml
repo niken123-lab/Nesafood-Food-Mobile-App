@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NesaFood" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primarycolor</item>
+        <item name="android:colorSecondary">@color/secondarycolor</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/background</item>
+    </style>
+</resources>

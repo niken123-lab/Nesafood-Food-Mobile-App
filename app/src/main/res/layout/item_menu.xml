@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="96dp"
+    android:padding="16dp">
+
+    <!-- Gambar Menu -->
+    <ImageView
+        android:id="@+id/imgMenu"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Gambar Menu"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tvHargaMenu" />
+
+    <!-- Nama Menu -->
+    <TextView
+        android:id="@+id/tvNamaMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nama Menu"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toEndOf="@id/imgMenu"
+        app:layout_constraintTop_toTopOf="@id/imgMenu"
+        app:layout_constraintEnd_toStartOf="@+id/stepper" />
+
+    <!-- Harga Menu -->
+    <TextView
+        android:id="@+id/tvHargaMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Rp20.000"
+        android:textSize="14sp"
+        android:textColor="@color/nesa_orange"
+        app:layout_constraintStart_toStartOf="@id/tvNamaMenu"
+        app:layout_constraintTop_toBottomOf="@id/tvNamaMenu"
+        app:layout_constraintEnd_toStartOf="@+id/stepper" />
+
+    <!-- Stepper (tombol +/-) -->
+    <LinearLayout
+        android:id="@+id/stepper"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="#F2F2F2"
+        android:gravity="center"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/imgMenu">
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="-"
+            android:backgroundTint="@color/nesa_peach"/>
+
+        <TextView
+            android:id="@+id/tvQty"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="+"
+            android:backgroundTint="@color/nesa_green"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/dialogEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Email"
+        android:backgroundTint="@color/background"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/dialogPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Password"
+        android:backgroundTint="@color/background"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/dialogUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username Baru"
+        android:backgroundTint="@color/background"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="10dp" />
+</LinearLayout>

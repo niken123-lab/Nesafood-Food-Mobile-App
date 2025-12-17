@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white"
+    tools:context=".UbahMenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Gambar preview -->
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:scaleType="centerCrop"
+            android:background="@color/white"
+            android:contentDescription="Preview Gambar Menu" />
+
+        <!-- Input Nama Menu -->
+        <EditText
+            android:id="@+id/edtNamaMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Menu"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/green" />
+
+        <!-- Input Harga -->
+        <EditText
+            android:id="@+id/edtHargaMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Harga (Rp)"
+            android:inputType="number"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/green" />
+
+        <!-- Input Deskripsi -->
+        <EditText
+            android:id="@+id/edtDeskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deskripsi Menu"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            android:minLines="3"
+            android:gravity="top"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/green" />
+
+        <!-- Tombol Simpan -->
+        <Button
+            android:id="@+id/btnSimpanMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ubah Menu"
+            android:backgroundTint="@color/nesa_green"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

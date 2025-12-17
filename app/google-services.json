@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "316638282769",
+    "project_id": "nesafood-20a98",
+    "storage_bucket": "nesafood-20a98.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316638282769:android:a577bd66368f61baaf1db0",
+        "android_client_info": {
+          "package_name": "com.example.nesafood"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEvP1UZqgAz69OjB5MNhyPtHXBmEWpEr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
